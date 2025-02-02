@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+section {
+    padding: 40px;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Animasi */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.slide-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
